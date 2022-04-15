@@ -430,15 +430,8 @@ class Page2D(tk.Frame):
             ax1.set_ylabel("amplitude")
             ax2=fig.add_subplot(122)
             ax2.plot(freq[:int(t2/2)], flt_ampx[:int(t2/2)], label='Filterd Eye Movement')
-            #ax.set_xlim(0,10)
             plt.legend(loc="best")
             plt.show()
-            """
-            res = tk.messagebox.askquestion("csvファイルの保存","位相データを.csvファイルとして保存しますか?")
-            if res =="yes":
-                inputdata = simpledialog.askstring("ファイル名","ファイル名を入力")
-                np.savetxt(str(inputdata)+".csv", pos, delimiter=",")
-            """
             
     def gaze_2dver(self):
         
@@ -472,12 +465,6 @@ class Page2D(tk.Frame):
             #ax.set_xlim(0,10)
             plt.legend(loc="best")
             plt.show()     
-            """
-            res = tk.messagebox.askquestion("csvファイルの保存","位相データを.csvファイルとして保存しますか?")
-            if res =="yes":
-                inputdata = simpledialog.askstring("ファイル名","ファイル名を入力")
-                np.savetxt(str(inputdata)+".csv", pos, delimiter=",")
-            """
     
      
             
