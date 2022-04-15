@@ -468,7 +468,7 @@ class Page2D(tk.Frame):
             ax.plot(T,a)
             #ax.plot(T,signal)
             ax.set_xlabel("Time[s]")
-            ax.set_ylabel("amplitude")
+            ax.set_ylabel("amp")
             #ax.set_xlim(0,10)
             plt.legend(loc="best")
             plt.show()     
